@@ -1,0 +1,177 @@
+<head>
+    <title>Frontend page</title>
+    <link rel=" stylesheet" href= "sheet.css"/>
+</head>
+<body>
+
+    <h1>Hello,world</h1>
+    <p>learning websites</p>
+
+</body>
+</html>
+
+<h2> card</h2>
+<p>A <strong>card</strong> uses all the 4 box model properties</p>
+<p>strong>width</strong></p>
+<p>strong>padding</strong></p>
+<p><strong>border</strong></p>
+<p><strong>margin</strong></p>
+
+    <div class="card">
+        i am a card
+    </div>
+    <div class="card">
+        i am another card
+    </div>
+
+</body>
+</html> 
+
+<h1>Flexbox</h1>
+<div class="flex">
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+</div>
+
+<h2>Grid</h2>
+<div class="grid">
+    <div>BOX</div>
+    <div>BOX</div>
+    <div>BOX</div>
+    <div>BOX</div>
+    <div>BOX</div>
+    <div>BOX</div>
+
+</div>
+
+<h2>Responsive design</h2>
+  <p>use to change the style on small screens</p>
+  <div class="box">resize the window</div>
+
+<div class="screen-label" id="label">You are on a BIG screen </div>
+
+  <div class="cards">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+  </div>
+
+  <script>
+    function checkScreen() {
+      var label = document.getElementById("label");
+      if (window.innerWidth <= 600) {
+        label.innerText = "You are on a SMALL screen ";
+      } else {
+        label.innerText = "You are on a BIG screen ";
+      }
+    }
+    window.addEventListener("resize", checkScreen);
+    checkScreen();
+  </script>
+
+  <!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+</head>
+<body class="p-4">
+
+  <h1>Bootstrap Quick-start</h1>
+  <p>No CSS file needed. Just use Bootstrap class names!</p>
+
+  <hr>
+
+ 
+  <h3>Buttons</h3>
+  <button class="btn btn-primary">Primary</button>
+  <button class="btn btn-danger">Danger</button>
+  <button class="btn btn-success">Success</button>
+
+  <hr>
+
+  <h3>Alert</h3>
+  <div class="alert alert-warning">This is a warning!</div>
+
+  <hr>
+
+  <h3>Grid (3 Columns)</h3>
+  <div class="row">
+    <div class="col bg-primary text-white p-3">Col 1</div>
+    <div class="col bg-danger text-white p-3">Col 2</div>
+    <div class="col bg-success text-white p-3">Col 3</div>
+  </div>
+
+  <hr>
+
+  
+  <h3>Card</h3>
+  <div class="card" style="width: 300px;">
+    <div class="card-body">
+      <h5 class="card-title">Card Title</h5>
+      <p class="card-text">This is a Bootstrap card.</p>
+      <button class="btn btn-primary">Click</button>
+    </div>
+  </div>
+
+</body>
+</html>
+
+<header>
+    <h1>LearnHub</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h2>Learn Anytime, Anywhere</h2>
+        <p>Join thousands of students.</p>
+        <button>Start Learning</button>
+    </div>
+
+    <div>
+        <img src="course.jpg" width="300">
+    </div>
+</section>
+
+<section>
+    <h2>Popular Courses</h2>
+
+    <div class="grid">
+        <div class="card">Python</div>
+        <div class="card">Java</div>
+        <div class="card">HTML & CSS</div>
+        <div class="card">JavaScript</div>
+        <div class="card">SQL</div>
+        <div class="card">AI Basics</div>
+    </div>
+</section>
+
+<section>
+    <h2>Register Now</h2>
+
+    <form>
+        <input type="text" placeholder="Enter Name"><br><br>
+
+        <input type="email" placeholder="Enter Email"><br><br>
+
+        <select>
+            <option>Python</option>
+            <option>Java</option>
+            <option>Web Development</option>
+        </select><br><br>
+
+        <button>Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 LearnHub | All Rights Reserved</p>
+</footer>
