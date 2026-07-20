@@ -1,16 +1,16 @@
 from django import forms
-from .models import Books, Review
+from .models import Book, Review
 
 class BookForm(forms.ModelForm):
     class Meta:
-        model = Books
+        model = Book  # <-- Fixed this
         fields = ['title', 'author', 'cover', 'description']
 
 class ReviewForm(forms.ModelForm):
     class Meta:
         model = Review
         fields = ['rating', 'comment']
-
+    
     def clean_rating(self):
         rating = self.cleaned_data.get('rating')
         if rating < 1 or rating > 5:

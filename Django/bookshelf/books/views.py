@@ -43,8 +43,8 @@ class BookCreateView(LoginRequiredMixin, CreateView):
     model = Book
     form_class = BookForm
     template_name = 'books/book_form.html'
-    success_urls = reverse_lazy('book_list')
+    success_url = reverse_lazy('book_list')
 
     def form_valid(self, form):
-        form.instance.add_by = self.request.user
+        form.instance.added_by = self.request.user
         return super().form_valid(form)
